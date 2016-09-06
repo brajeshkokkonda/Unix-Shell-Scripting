@@ -1,0 +1,188 @@
+date "+Today's date %D and time %T"
+date "+Today's date is %D and time is %r"
+cal 1 2016
+who -uH
+whoami
+passwd
+echo hello world
+echo "hello world"
+man cal
+lpr file1
+tty (terminal type)
+stty (set terminal)
+clear
+script
+script mysessionfile
+script -a (appending to old typescript)
+uname
+uname -a
+bc
+learn
+help
+finger
+------------------------
+Line Editors: sed, ex
+Screen Editors: vi
+vi (command mode & text mode)
+----------------------------
+File Systems
+
+echo D*
+ls -ai (displays inode list)
+pwd
+la -a (list all)
+ls -ld (working directory)
+ls -nd (list user & group ids)
+ls -r (list in reverse)
+ls -lt (basic timestamp)
+ls -p
+ls -Rp (recursive list)
+ls -1 (print one column)
+ls -li
+cd
+mkdir
+rmdir
+cat
+vi
+more
+cp
+mv
+ln
+rm
+find
+------------------------------------
+Security & File Permission
+
+groups
+chmod (r=4, w=2, x=1)
+umask
+chown
+chgrp
+--------------------------------------
+Introduction to Shells
+
+echo $SHELL
+echo $0
+ls | grep d (pipe)
+tee teeOut
+ls; cal; who; date (sequenced commands)
+cp file1 tmpFile && echo "file copy success"
+
+echo \<\>\"\'\$
+echo today\'s date is $(date)
+echo today\'s date is `date`
+ctrl+z (suspending a job)
+fg (resuming a job)
+ctrl+c (terminating a job)
+bg
+kill
+jobs
+ps
+alias show='ls -l'
+unalias show
+alias
+
+pre-defined variables:
+PATH, ENV, SHELL, HOME, TERM, PS1, VISUAL, TMOUT
+set -o
+set verbose
+unset verbose
+------------------------------
+Filters
+
+more, grep, sed, awk
+
+cat, cmp, comm, cut, diff, head, paste, sort, tail, tr, uniq, wc
+
+Filters and Pipes
+Concatenating Files
+cat file1 file2 > summary
+head -2 sample.txt
+tail -2 sample.txt
+head -4 sample.txt | tail -1
+cut -c1-10,14-20 sample2.txt
+paste sample.txt sample2.txt
+sort file.txt
+(more examples on sorting)
+tr "aeiou" "AEIOU"
+tr -d "aeiou"
+uniq sample.txt
+uniq -c sample.txt
+wc sample.txt
+cmp file1 file2
+diff file1 file2
+comm file1 file2
+----------------------------
+Communications
+
+talk, write, mail, telnet, ftp
+mesg y
+talk tom tty
+write jerry tty
+mail bajju@gmail.com
+telnet 192.168.0.1
+ftp 192.168.0.1
+---------------------------------
+vi and ex
+
+vi and ex commands (should be typed after 'esc' key)
+i insert before cursor
+I insert at begining
+a append after the cursor
+A append at end of line
+o add after line
+O add before line
+r replace one char
+R replace many
+s replaces one char with one or more chars
+S replaces entire current line
+x delete the current char
+X delete before the cursor
+m mark (only oer session)
+~ change case
+4~ change case upto 4 chars
+p put/paste copies after cursor
+P put/paste copies before the cursor
+J join two lines
+--------------
+Range Commands (move cursor, delete, change, yank)
+2{ move backward two paragraphs
+dd delete current line
+cc change current line
+yy yank current line (yank copies text to tmp budder)
+--------------
+Global Commands
+ctrl+y scroll up
+ctrl+e scroll down one line
+ctrl+u scroll up half screen
+ctrl+d scroll down half screen
+ctrl+b scroll up whole screen
+ctrl+f scroll down whole screen
+u undo last edit
+U undo all changes on current line
+. repeat previous command
+z (enter)  regenerates ecreen and positions current line at top
+z. middle
+z- bottom
+ctrl+L without moving cursor
+ZZ quit and save
+q! quit without save
+---------
+Rearrange text in vi
+3dd delete 3 lines to buffer
+G move to end of buffer
+p put after current line
+
+ma set mark 'a'
+y`a yank block a
+p put text
+
+ex editor
+:wq write and quit
+:x exit
+
+----------------------------------
+[see u in part 2]
+Happy Vinayaka Chavithi 2016 !!!
+ 
+
