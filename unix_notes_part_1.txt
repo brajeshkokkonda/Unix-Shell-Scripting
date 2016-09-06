@@ -149,7 +149,7 @@ Range Commands (move cursor, delete, change, yank)
 2{ move backward two paragraphs
 dd delete current line
 cc change current line
-yy yank current line (yank copies text to tmp budder)
+yy yank current line (yank copies text to tmp buffer)
 --------------
 Global Commands
 ctrl+y scroll up
