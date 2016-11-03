@@ -2,6 +2,7 @@ Shell Scripting Syllabus:
 -------------------------
 Basics:
 -Linux/Unix Commands
+-Overview of bash, ksh & csh shells
 -Editors: vi, vim, ex, sed
 
 1. Shell Variables
