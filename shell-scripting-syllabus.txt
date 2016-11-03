@@ -1,0 +1,23 @@
+Shell Scripting Syllabus:
+-------------------------
+Basics:
+-Linux/Unix Commands
+-Editors: vi, vim, ex, sed
+
+1. Shell Variables
+2. Shell Keywords
+3. Positional Parameters
+4. Arithimetic operations
+5. Decision Control Structures
+	if-then-fi
+	if-then-else-fi
+	case
+6. Loop Control Structure
+	while
+	until
+	for
+	(break & continue)
+7. Shell metacharacters
+8. grep
+9. sed (stream editor)
+10. awk
